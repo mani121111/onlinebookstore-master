@@ -9,7 +9,7 @@ RUN apt update
 RUN apt install openjdk-17-jdk
 RUN apt install maven
 RUN mvn package
-COPY target/*.war /usr/local/tomcat/webapps/
+
 
 # Expose the Tomcat default port
 EXPOSE 8080
